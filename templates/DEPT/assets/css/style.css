@@ -20,46 +20,6 @@ strong {
 	font-size: 18px;
 }
 
-a {
-	color: #f35b3f;
-	border-bottom: 1px dashed #f35b3f;
-	text-decoration: none;
-	transition: all .3s;
-}
-
-a:hover,
-a:focus {
-	color: #f35b3f;
-	border: 0;
-	text-decoration: none;
-}
-
-h1,
-h2 {
-	margin-top: 10px;
-	font-size: 38px;
-	font-weight: 100;
-	color: #555;
-	line-height: 50px;
-}
-
-h3 {
-	font-size: 22px;
-	font-weight: 300;
-	color: #555;
-	line-height: 30px;
-}
-
-h4 {
-	font-size: 18px;
-	font-weight: 300;
-	color: #555;
-	line-height: 26px;
-}
-
-img {
-	max-width: 100%;
-}
 
 .medium-paragraph {
 	font-size: 18px;
@@ -83,6 +43,7 @@ img {
 
 .wrapper {
 	display: block;
+	margin-top: 130px;
 }
 
 
@@ -92,7 +53,7 @@ img {
 	width: 250px;
 	height: 100vh;
 	position: fixed;
-	top: 0;
+	top: 130px;
 	left: -255px;
 	z-index: 999;
 	background: #333;
@@ -335,7 +296,7 @@ a[aria-expanded="true"] {
 }
 
 .open-menu {
-	position: fixed;
+	position: relative;
 	top: 20px;
 	left: 10px;
 	z-index: 997;
@@ -842,13 +803,6 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 
 
-/***** Footer *****/
-
-footer {
-	padding: 40px 0;
-}
-
-
 /* < !--- --------------------- full tab content---------------------------> */
 body a {
 	text-decoration: none !important;
@@ -857,7 +811,7 @@ body a {
 
 
 #content h2 {
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	font-size: 30px;
 	text-align: center;
 }
@@ -999,7 +953,7 @@ body a {
 	}
 
 	.nav-link {
-		color: #b1040e !important;
+		color: #b1040e;
 		/* Text color */
 		background-color: #fff;
 		/* Background color */
@@ -1210,10 +1164,6 @@ a {
 	margin-top: 4px;
 }
 
-footer p {
-
-	font-size: 16px;
-}
 
 .address {
 	font-size: 16px;
@@ -1225,9 +1175,6 @@ footer p {
 	width: fit-content;
 }
 
-footer h5 {
-	margin-top: 20px;
-}
 
 /* Facebook */
 .social-icons .facebook:hover i {
@@ -1268,7 +1215,7 @@ footer h5 {
 }
 
 /* < !---------------------footer ends-->< !------------------sidenav style--> */
-.logo {
+.department-logo {
 	padding-bottom: 30px !important;
 	padding-top: 50px !important;
 	height: fit-content;
@@ -1277,12 +1224,12 @@ footer h5 {
 	padding-top: 70px !important;
 }
 
-.logo a {
+.department-logo a {
 	width: 5px !important;
 
 }
 
-.logo h3 {
+.department-logo h3 {
 	max-height: 40px;
 }
 
@@ -1330,9 +1277,9 @@ footer h5 {
 	opacity: 0.85;
 }
 
-#content h2 {
-	margin-top: 80px;
-}
+/* #content h2 {
+	margin-top: 0px;
+} */
 
 /* < !------------------sidenav style--> */
 @media screen and (min-width: 768px) and (max-width:800px) {
