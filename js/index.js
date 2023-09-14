@@ -1,3 +1,6 @@
+const gradient = "linear-gradient(to bottom, black, rgba(0,0,0,0))";
+
+
 function increaseNumber(targetElement, endValue) {
     let currentNumber = 0;
     const duration = 2300;
@@ -58,6 +61,7 @@ observer_2.observe(lastStats);
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    const navdiv = document.querySelector('.fixed-top');
     const navbar = document.querySelector('.navbar');
     const navbar2 = document.querySelector('.navbar-expand-lg');
     const navbar2ndLarge = document.querySelector('#second-large-navbar');
@@ -70,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav2text7= document.getElementById("nav-bar2-text7");
     const nav2text8= document.getElementById("nav-bar2-text8");
     const showDiv = document.querySelector('.placement-content');
-    navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.642)';
-    navbar2.style.backgroundColor = 'rgba(0, 0, 0, 0.642)';
-    // rgba(0, 0, 0, 0.6)
-
+    navbar.style.backgroundColor ='transparent';
+    navbar2.style.backgroundColor = "transparent";
+    navbar2ndLarge.style.backgroundColor="transparent";
+    navdiv.style.backgroundImage=gradient;
     let hasVisitedShowDiv = false;
 
 
@@ -89,16 +93,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateNavbarBackground() {
         if (!hasVisitedShowDiv && isInViewport(showDiv)) {
+            const navelement=document.getElementById('second-large-navbar');
             navbar.style.backgroundColor = '#b1040e'; 
             navbar2ndLarge.style.backgroundColor='white';
+            nav2text.classList.remove("hover-underline-animation");
+            nav2text.classList.add("hover-underline-animation-1");
             nav2text.style.color="black";
+            nav2text2.classList.remove("hover-underline-animation");
+            nav2text2.classList.add("hover-underline-animation-1");
             nav2text2.style.color="black";
+            nav2text3.classList.remove("hover-underline-animation");
+            nav2text3.classList.add("hover-underline-animation-1");
             nav2text3.style.color="black";
+            nav2text4.classList.remove("hover-underline-animation");
+            nav2text4.classList.add("hover-underline-animation-1");
             nav2text4.style.color="black";
+            nav2text5.classList.remove("hover-underline-animation");
+            nav2text5.classList.add("hover-underline-animation-1");
             nav2text5.style.color="black";
+            nav2text6.classList.remove("hover-underline-animation");
+            nav2text6.classList.add("hover-underline-animation-1");
             nav2text6.style.color="black";
+            nav2text7.classList.remove("hover-underline-animation");
+            nav2text7.classList.add("hover-underline-animation-1");
             nav2text7.style.color="black";
+            nav2text8.classList.remove("hover-underline-animation");
+            nav2text8.classList.add("hover-underline-animation-1");
             nav2text8.style.color="black";
+            navelement.classList.add("shadow-lg");
             hasVisitedShowDiv = false; 
         }
     }
@@ -154,17 +176,35 @@ function scrollFunction() {
     const nav2text7= document.getElementById("nav-bar2-text7");
     const nav2text8= document.getElementById("nav-bar2-text8");
     const showDiv = document.querySelector('.placement-content');
-    navbar.style.backgroundColor = 'transparent';
-    navbar2.style.backgroundColor = 'transparent';
-    navbar2ndLarge.style.backgroundColor='transparent';
+    const navelement=document.getElementById('second-large-navbar');
+    navbar.style.backgroundColor = "transparent";
+    navbar2.style.backgroundColor = "transparent";
+    navbar2ndLarge.style.backgroundColor="transparent";
+    nav2text.classList.remove("hover-underline-animation-1");
+    nav2text.classList.add("hover-underline-animation");
     nav2text.style.color="white";
-            nav2text2.style.color="white";
-            nav2text3.style.color="white";
-            nav2text4.style.color="white";
-            nav2text5.style.color="white";
-            nav2text6.style.color="white";
-            nav2text7.style.color="white";
-            nav2text8.style.color="white";
+    nav2text2.classList.remove("hover-underline-animation-1");
+    nav2text2.classList.add("hover-underline-animation");
+    nav2text2.style.color="white";
+    nav2text3.classList.remove("hover-underline-animation-1");
+    nav2text3.classList.add("hover-underline-animation");
+    nav2text3.style.color="white";
+    nav2text4.classList.remove("hover-underline-animation-1");
+    nav2text4.classList.add("hover-underline-animation");
+    nav2text4.style.color="white";
+    nav2text5.classList.remove("hover-underline-animation-1");
+    nav2text5.classList.add("hover-underline-animation");
+    nav2text5.style.color="white";
+    nav2text6.classList.remove("hover-underline-animation-1");
+    nav2text6.classList.add("hover-underline-animation");
+    nav2text6.style.color="white";
+    nav2text7.classList.remove("hover-underline-animation-1");
+    nav2text7.classList.add("hover-underline-animation");
+    nav2text7.style.color="white";
+    nav2text8.classList.remove("hover-underline-animation-1");
+    nav2text8.classList.add("hover-underline-animation");
+    nav2text8.style.color="white";
+    navelement.classList.remove("shadow-lg");
   }
 }
 
@@ -173,6 +213,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-
