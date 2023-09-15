@@ -157,7 +157,85 @@ footer h5 {
 .nav-elements-large {
   display: none;
 }
+/* UPPER ANIMATION  */
+.w3rcontainer {
+  border: 1px solid #cccfdb;
+  border-radius: 2px;
+} 
 
+.hover-overline-animation { /* Change class name */
+ display: inline-block;
+ position: relative;
+ color: #0087ca;
+}
+
+.hover-overline-animation:after { /* Change class name */
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 2px;
+ top: 0;
+ left: 0;
+ background-color: #ffffff;
+ transform-origin: top left;
+ transition: transform 0.25s ease-out;
+}
+
+.hover-overline-animation:hover:after { /* Change class name */
+ transform: scaleX(1);
+ transform-origin: top right;
+}
+/* LOWER NAVBAR ANNIMATION  */
+.w3rcontainer{
+  border: 1px solid #cccfdb;
+  border-radius: 2px;
+} 
+.hover-underline-animation {
+ display: inline-block;
+ position: relative;
+ color: #ffffff;
+}
+
+.hover-underline-animation:after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ background-color: #ffffff;
+ transform-origin: bottom left;
+ transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+ }
+.hover-underline-animation-1 {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+ }
+.hover-underline-animation-1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+ }
+
+.hover-underline-animation-1:hover:after {
+ transform: scaleX(1);
+ transform-origin: bottom right;
+}
+/* navbar large hver animation ends  */
 /*.second-navbar {
     background-color: #ffffff;
     height: 30px;
